@@ -18,6 +18,9 @@ export default {
     PageHeader,
     PageFooter,
   },
+  created() {
+    this.$store.commit('the_menu/TOGGLE_MENU', false);
+  },
 };
 </script>
 

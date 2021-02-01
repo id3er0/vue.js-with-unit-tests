@@ -1,3 +1,5 @@
+@import '~assets/variables';
+
 :root {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -50,4 +52,11 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+body {
+  &._no-scroll {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
